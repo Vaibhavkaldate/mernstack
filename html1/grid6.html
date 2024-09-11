@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Assignment 1</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            /* background-color: aquamarine; */
+            display: grid;
+            width: 96vw;
+            height: 95vh;
+            gap: 5px;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 50% 20% 15% 15%;
+        }
+
+        .items {
+            background-color: yellow;
+            color: black;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        #header {
+            grid-row: 1;
+            grid-column: 1/span 4;
+        }      
+
+        #article {
+            grid-column: 1/ span 1;
+            grid-row: 2/ span 4;
+           
+        }
+
+        #nav {
+            grid-column:2;
+            grid-row: 2;
+           
+        }
+        #s1{
+            grid-row: 3/ span 4;
+            grid-column: 2;
+        }
+        #ads{
+            grid-row: 2;
+            grid-column: 3;
+        }
+        #s2{
+            grid-row: 3;
+            grid-column: 3;
+        }
+        #s3{
+            grid-row: 4;
+            grid-column: 3;
+        }
+        #s4{
+            grid-row: 4;
+            grid-column: 4;
+        }
+
+
+
+        #footer {
+            grid-row: 2/ span 2;
+            grid-column: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header" class="items">1</div>
+        <div id="article" class="items">2</div>
+        <div id="nav" class="items">3</div>
+        <div id="ads" class="items">4</div>
+        <div id="footer" class="items">5</div>
+        <div id="s1" class="items">6</div>
+        <div id="s2" class="items">7</div>
+        <div id="s3" class="items">8</div>
+        <div id="s4" class="items">9</div>
+    </div>
+</body>
+
+</html>

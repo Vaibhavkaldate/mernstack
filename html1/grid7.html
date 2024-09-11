@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Assignment 1</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            /* background-color: aquamarine; */
+            display: grid;
+            width: 56vw;
+            height: 20vh;
+            gap: 5px;
+            grid-template-columns: 20% 20% 20% 20% 20% 20%;
+            grid-template-rows: 100%;
+            
+        }
+
+        .items {
+            background-color: yellow;
+            color: black;
+            font-size: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    
+        <div id="s1" class="items"> </div> 
+        <div id="s2" class="items"></div>
+        <div id="s3" class="items"></div>
+        <div id="s4" class="items"></div>
+        <div id="s5" class="items"></div>
+        <div id="s6" class="items"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Assignment 1</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            /* background-color: aquamarine; */
+            display: grid;
+            width: 99vw;
+            height: 98vh;
+            gap: 5px;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 20% 60% 20%;
+        }
+
+        .items {
+            background-color: gold;
+            color: black;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        #header {
+            grid-row: 1;
+            grid-column: 1/span 4;
+        }
+
+        #article {
+            grid-row: 2/span 2;
+            grid-column: 1;
+        }
+
+        #ads {
+            grid-row: 2;
+            grid-column: 2/span 2;
+        }
+
+        #footer {
+            grid-row: 3;
+            grid-column: 2/span 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header" class="items">Header</div>
+        <div id="nav" class="items">Nav</div>
+        <div id="article" class="items">Article</div>
+        <div id="ads" class="items">Ads</div>
+        <div id="footer" class="items">Footer</div>
+    </div>
+</body>
+
+</html>

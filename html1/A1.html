@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .items {
+            background-color: bisque;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .wrapper {
+            border: 3px solid black;
+            height: 500px;
+
+        }
+
+        .t2 {
+            display: flex;
+            flex-direction: column;
+            margin-right: 200px;
+
+        }
+
+        label {
+            margin: 20px;
+        }
+
+        .t1 {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 2;
+        }
+
+        #d1 {
+            height: 30px;
+            width: 70px;
+            color: white;
+            background-color: grey;
+            align-self: self-end;
+
+
+        }
+
+
+        input {
+            margin: 10px;
+            height: 30px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="items">
+
+            <div class="t2">
+
+                <label for="t1"> Name </label>
+                <label for="t1">Town where you born in </label>
+                <label for="t5">Email Address </label>
+            </div>
+            <div class="t1">
+                <input type="text" id="s2" required>
+                <input type="text" id="s1" required>
+                <input type="email" id="s3" required>
+                <button id="d1">Submit</button>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>

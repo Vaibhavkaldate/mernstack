@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: orangered;
+            color: white;
+            border-radius:3px; 
+            padding: 16px;
+            font-family: sans-serif;
+        }
+        .container1{
+            display:flex;
+            justify-content: end;
+            flex-grow: 1;
+            padding: 16px;
+             
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            
+        }
+        li{
+            
+            margin: 16px;
+        }
+        button{
+            padding: 16px;
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>Logo</li>
+            <li>Home</li>
+            <li>Products</li>
+            <li>Services</li>
+        </ul>
+        <div class="container1">
+            <input type="text" placeholder="Search Here">
+            <button>Go</button>
+        </div>
+    </div>
+</body>
+</html>

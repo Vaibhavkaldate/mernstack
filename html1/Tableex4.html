@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            height: 200px;
+            width: 600px;
+            
+        }
+        td {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+        caption{
+            font-size: 40px;
+            text-align: left;
+            margin-bottom: 20px;
+            font-style: normal;
+            
+        }
+        tr:nth-child(even){
+            background-color: grey;
+        }
+
+        th {
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 23px;
+
+        }
+        #s1{
+            background-color: rgb(75, 75, 219);
+            color: white;
+        
+        }
+        #s2{
+            background-color: rgb(24, 55, 128);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+    <caption>2019 Fourth Quarter Report</caption>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Octomber</th>
+            <th>November</th>
+            <th>December</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td id="s1">Projected</td>
+            <td>$820,180</td>
+            <td>$841,660</td>
+            <td>$732,270</td>
+        </tr>
+        <tr>
+            <td id="s2">Actual</td>
+            <td>$900,450</td>
+            <td>$321,760</td>
+            <td>$762,890</td>
+        </tr>
+        <tr>
+            <td id="s1">Visualization</td>
+            <td>80%</td>
+            <td style="background-color: yellow;"><b>90%</b></td>
+            <td>75%</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
