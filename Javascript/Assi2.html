@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Return first and last name from a form </title>
+    <script>
+        function form1() {
+            let ob1 = document.getElementById("t1")
+            let fname = ob1.value
+            let ob2 = document.getElementById("t2")
+            let lname = ob2.value
+            let ob3 = document.getElementById("d1")
+            ob3.innerText = "This is  name " + fname +" "+lname
+            // ob3.innerText = "This is last  name" + lname
+        
+
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="text" name="fname" value="" id="t1">
+        <br>
+        <input type="text" name="lname" value="" id="t2">
+        <br>
+        <input type="button" value="Submit" onclick="form1()">
+    </form>
+
+    <div id="d1" >
+
+    </div>
+</body>
+
+</html>
