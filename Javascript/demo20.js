@@ -7,6 +7,7 @@ class Student{
     }
      static show(){
        // console.log(`ID: ${this.#id}`) can not use instance variable
+       // static method only support staic variables 
         console.log(`Count is : ${Student.i}`)
     }
 
