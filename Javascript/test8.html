@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    function show(){
+        let cnodes=document.body.childNodes
+        console.log(cnodes)
+
+        for(let i=0; i < cnodes.length;i++){
+            console.log(cnodes[i])
+        }
+        console.log("*****************************")
+
+        let celements=document.body.children
+        console.log(celements)
+
+        for(let i=0; i < celements.length;i++){
+            console.log(celements[i])
+        }
+
+
+    }
+  </script>
+</head>
+<body>
+
+    <input type="button" value="Click Here" onclick="show()">
+    <br>
+    <div></div>
+    <div></div>
+    
+</body>
+</html>

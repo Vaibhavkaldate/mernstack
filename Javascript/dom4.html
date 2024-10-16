@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    function show(){
+        let ob=document.getElementById("b1")
+        console.log(ob)
+        console.log("****************")
+        let rows=ob.rows
+        console.log(rows)
+        for(const row of rows){
+            console.log(row)
+        }
+        let cols=row.cells
+        for(const c of cols){
+            console.log(c.innerText)
+        }
+         
+    }
+
+  </script>
+</head>
+<body>
+    <table >
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+
+<tbody>
+        <tr>
+            <td>1</td>
+            <td>abc</td>
+            <td>xyz</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>acrc</td>
+            <td>jyz</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>3</td>
+            <td>obc</td>
+            <td>kyz</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>obc</td>
+            <td>kyz</td>
+        </tr>
+
+    </tbody>
+       
+
+    </table>
+    
+</body>
+</html>
