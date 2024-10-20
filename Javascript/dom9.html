@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function show(){
+            let p1=document.createElement("p")
+            p1.innerText="Paragraph Added by JS"
+            // document.body.append(p1)
+            document.body.prepend(p1)
+
+            ///******************
+
+            let p2=document.createElement("p")
+            p2.innerText="Paragraph added into div tag"
+             //find div tag
+            let ob1=document.getElementById("d1")
+
+            // ob1.append(p2)
+            ob1.prepend(p2)
+        
+
+            let p3 =documet.createElement("p")
+            p3.innerText="Paragraph added before div tag"
+            ob1.before(p3)
+
+            let p4 =documet.createElement("p")
+            p4.innerText="Paragraph added after div tag"
+            ob1.after(p4)
+
+            let br=documen.createElement("br")
+            document.body.append(br)
+
+            let textnode=document.createTextNode("This is text node ")
+            document.body.append(textnode)
+        
+    }  
+          
+        
+    </script>
+</head>
+<body>
+    <div id="d1" style="background-color: red;width: 100px;height: 100px;">
+        This is div tag </div>
+        <input type="button" value="Click Here" onclick="show()">
+</body>
+</html>

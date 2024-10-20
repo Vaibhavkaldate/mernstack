@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function show(){
+
+            // let ob1=document.querySelector(".class1")
+            // ob1.style.backgroundColor="red"
+            // ob1.style.width="200px"
+            // ob1.style.height="200px"
+            //get all element
+            let elements=document.querySelectorAll(".class1")
+            for(const e of elements){
+                e.style.backgroundColor="red"
+                e.style.width="100px"
+                e.style.height="100px"
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="class1">Hello</div>
+    <p>This is paragraph1</p>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisveniet vitae sapiente quod unde.</div>
+    <p class="class1">
+        This is paragraph2
+    </p>
+    <div>
+        This is div 2
+    </div>
+    <p class="class1">
+        This is paragraph3
+    </p>
+    <input type="button" value="Click Here" onclick="show()">
+</body>
+</html>
+
+

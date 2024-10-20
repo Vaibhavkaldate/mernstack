@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <script>
+        function create(){
+            let ob1=document.createElement("ul")
+            
+            ob1.id="d1"
+            ob1.innerHTML=" <b>A</b> <br> <b> B </b>  <br> <b> C </b>"
+
+            document.body.append(ob1)
+        }
+        function red(){
+          
+            let ob1=document.getElementById("d1")
+             ob1.style.backgroundColor="red"
+           
+            
+        }
+        function green(){
+          
+            let ob2=document.getElementById("d1")
+             ob2.style.backgroundColor="green"
+           
+            
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" value="create" onclick="create()">
+    <input type="button" value="Red" onclick="red()">
+    <input type="button" value="Green" onclick="green()">
+</body>
+</html>

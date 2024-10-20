@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function create() {
+            let li = ['A', 'B', 'C'];
+            for (let i = 0; i < 3; i++) {
+                let ob = document.createElement("ul");
+
+                ob.innerText = li[i];
+                ob.id = "d1"
+                document.body.append(ob);
+            }
+        }
+
+        function red() {
+
+            let ob1 = document.getElementById("d1");
+            ob1.style.backgroundColor = "red";
+
+        }
+
+        function green() {
+            let ob2 = document.getElementById("d1");
+            ob2.style.backgroundColor = "green";
+
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Create " onclick="create()">
+    <input type="button" value="Red" onclick="red()">
+    <input type="button" value="Green" onclick="green()">
+</body>
+
+</html>
